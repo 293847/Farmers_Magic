@@ -1,0 +1,143 @@
+*{
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.section1{
+	display: flex;
+	flex-direction: row;
+}
+.hero{
+	height: 150px;
+	width: 230px;
+}
+/* Navbar */
+
+.allcards{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+	margin-top: 15px;
+	margin-left: 160px;
+	scrollbar-color: transperent transperent;
+}
+.allcards::-webkit-scrollbar {
+    width: 0.5em; 
+    background-color: #F5F5F5; 
+  }
+  .allcards::-webkit-scrollbar-thumb {
+    background-color: #888; 
+  }
+.card{
+    height: 450px;
+    width: 300px;
+    display: flex;
+    background-color: rgb(165, 227, 173);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+	box-shadow: black;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px black;
+	
+}
+.card:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 5px 10px rgb(0, 0, .2);
+}
+.image img{
+    height: 230px;
+    width: 200px;
+    margin: 20px;
+    background-color: aqua;
+}
+.title{
+    background-color: transparent;
+    color: crimson;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	
+}
+.btn{
+    color: purple;
+    width: 150px;
+    height: 30px;
+    background-color: wheat;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgb(0, 0, .2);
+	
+}
+.maintext{
+	font-size: 50px;
+	margin-left: 510px;
+	margin-bottom: 60px;
+	margin-top: 70px;
+	font-family: monospace;
+}
+
+
+.btn:hover{
+	background-color: #888;
+	color: black;
+
+}
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: navajowhite;
+	overflow-x: hidden;
+	padding-top: 20px;
+  }
+  
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: black;
+	background-color: navajowhite;
+	display: block;
+  }
+  
+  .sidenav a:hover {
+	color: red;
+  }
+  
+ 
+  
+
+@media only screen and (max-width: 768px) {
+	.allcards{
+		display: flex;
+		flex-direction: column;
+		overflow: auto;
+		margin-left: 160px;
+	
+	}
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+	.image img{
+		height: 250px;
+		width: 200px;
+		object-fit: cover;
+	}
+	.maintext{
+		font-size: 35px;
+		margin-left: 40px;
+		margin-bottom: 60px;
+		margin-top: 50px;
+		font-family: monospace;
+	}
+	.hero{
+		height: 170px;
+		width: 220px;
+		margin-top: 10px;
+	}
+  }

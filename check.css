@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.inputype{
+    width: 30rem;
+    height: 2em;
+}
+.main h3{
+    font-size: 2rem;
+}
+.btn{
+    width: 20rem;
+    margin-top: 3rem;
+    background-color: greenyellow;
+}
+.inputype1{
+    width: 10rem;
+    height: 3rem;
+}
